@@ -1,1 +1,4 @@
 rect.cpp
+rect
+*.o
+rect.h
