@@ -1,5 +1,5 @@
 
-cdef extern double add_doubles(double a, double b) nogil:
+cdef extern int the_answer() nogil:
     with gil:
         raise ValueError("Testing an error")
-    return 42.0
+    return 42

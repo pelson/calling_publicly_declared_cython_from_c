@@ -1,11 +1,11 @@
 #include <Python.h>
-#include "pyx_funcs.h"
 
-double val;
+
+int val;
 
 static PyObject* bar(PyObject *self, PyObject *args) {
-    val = add_doubles(0.8, 41.2);
-    return Py_BuildValue("d", val);
+    val = the_answer();
+    return Py_BuildValue("i", val);
 }
 
 static PyMethodDef foo_methods[] = {

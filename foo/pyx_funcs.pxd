@@ -1,2 +1,2 @@
 cdef extern:
-    double add_doubles(double, double) nogil;
+    int the_answer() nogil;
